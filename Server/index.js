@@ -6,18 +6,18 @@ const http = require('https');
 const server = http.createServer(app);
 const cors = require('cors');
 
-const SocketIO = require('socket.io')(http);
+const SocketIO = require('socket.io');
 const MESSAGE_EVENT = "newMessage";
 
 const port = 4000 ;
 
 app.use(cors());
 
-const io = new SocketIO.Server({
+const io = new SocketIO(server, {
     cors: {
-      origin: "*:*",
+      origin: "*",
       methods: ['GET', 'POST'],
-      allowedHeaders: ["content-type"]
+      allowedHeaders: ['X-ACCESS_TOKEN', 'Access-Control-Allow-Origin', 'Authorization', 'Origin', 'x-requested-with', 'Content-Type', 'Content-Range', 'Content-Disposition', 'Content-Description']
     },
   });
 
