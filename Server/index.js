@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 
-const http = require('http');
+const http = require('https');
 const server = http.createServer(app);
 const cors = require('cors');
 
-const SocketIO = require('socket.io');
+const SocketIO = require('socket.io')(http);
 const MESSAGE_EVENT = "newMessage";
 
 const port = 4000 ;
@@ -15,9 +15,9 @@ app.use(cors());
 
 const io = new SocketIO.Server({
     cors: {
-      origin: "http://localhost:3000",
+      origin: "*:*",
       methods: ['GET', 'POST'],
-      credentials: true
+      allowedHeaders: ["content-type"]
     },
   });
 
