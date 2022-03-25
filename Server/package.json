@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm start",
-    "devStart": "npm start",
+    "start": "node index.js", 
+    "devStart": "node index.js",
     "publishToHeroku": "cd ../ && git subtree push --prefix Server heroku-realtimechat-server master || true"
   },
   "keywords": [
