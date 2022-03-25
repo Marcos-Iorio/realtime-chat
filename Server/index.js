@@ -9,6 +9,8 @@ const cors = require('cors');
 const SocketIO = require('socket.io');
 const MESSAGE_EVENT = "newMessage";
 
+const port = process.env.PORT || 5000 ;
+
 app.use(cors());
 
 const io = new SocketIO.Server({
@@ -38,6 +40,6 @@ io.on("connection", (socket) => {
     });
   });
 
-server.listen(process.env.PORT || 5000 , () => {
+server.listen(port , () => {
     console.log(`Server listening to ${port}`);
 })
