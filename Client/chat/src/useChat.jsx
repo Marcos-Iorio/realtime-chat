@@ -1,7 +1,7 @@
-import React, {useState, useRef, useEffect} from 'react';
+import {useState, useRef, useEffect} from 'react';
 
 import { io } from "socket.io-client";
-const SERVER ='http://localhost:4000';
+const SERVER ="https://realtimechat-serverside.herokuapp.com";
 
 const MESSAGE_EVENT = "newMessage";
 
@@ -27,6 +27,7 @@ const useChat = () => {
     }, []);
 
     const sendMessage = (messageBody) => {
+        console.log(messageBody)
         socketRef.current.emit(MESSAGE_EVENT, {
             body: messageBody,
             senderId: socketRef.current.id,
