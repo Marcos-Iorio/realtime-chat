@@ -9,7 +9,7 @@ const cors = require('cors');
 const SocketIO = require('socket.io');
 const MESSAGE_EVENT = "newMessage";
 
-const port = process.env.PORT || 5000 ;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 
