@@ -22,6 +22,7 @@ const io = new SocketIO.Server({
   });
 
 io.attach(server);
+io.set('transports', ['websocket']);
 
 app.use('/', express.json());
 
