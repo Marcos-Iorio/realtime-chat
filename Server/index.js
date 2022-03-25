@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 
-const http = require('http');
+const http = require('https');
 const server = http.createServer(app);
 const cors = require('cors');
 
@@ -13,7 +13,7 @@ const port = 4000 ;
 
 app.use(cors());
 
-const io = new SocketIO.Server({
+const io = new SocketIO.Server(server, {
     cors: {
       origin: "*",
       methods: ['GET', 'POST'],
