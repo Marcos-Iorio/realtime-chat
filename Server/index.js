@@ -15,8 +15,9 @@ app.use(cors());
 
 const io = new SocketIO.Server({
     cors: {
-      origin: "*",
-      methods: ['GET', 'POST']
+      origin: "http://localhost:3000",
+      methods: ['GET', 'POST'],
+      credentials: true
     },
   });
 
@@ -39,6 +40,6 @@ io.on("connection", (socket) => {
     });
   });
 
-server.listen("https://realtimechat-serverside.herokuapp.com/" , () => {
+server.listen(port , () => {
     console.log(`Server listening to ${port}`);
 })
