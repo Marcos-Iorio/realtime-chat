@@ -17,12 +17,12 @@ const io = new SocketIO.Server({
     cors: {
       origin: "*",
       methods: ['GET', 'POST'],
-      allowedHeaders: ['X-ACCESS_TOKEN', 'Access-Control-Allow-Origin', 'Authorization', 'Origin', 'x-requested-with', 'Content-Type', 'Content-Range', 'Content-Disposition', 'Content-Description']
+      allowedHeaders: ['X-ACCESS_TOKEN', 'Access-Control-Allow-Origin', 'Authorization', 'Origin', 'x-requested-with', 'Content-Type', 'Content-Range', 'Content-Disposition', 'Content-Description'],
+      transports: ['websocket']
     },
   });
 
 io.attach(server);
-io.set('transports', ['websocket']);
 
 app.use('/', express.json());
 
