@@ -1,0 +1,20 @@
+{
+  "name": "frontend-chat-app",
+  "version": "1.0.0",
+  "description": "Real time chat app frontend using React",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publishToHeroku": "cd ../ && git subtree push --prefix Client heroku-realtimechat-client master || true"
+  },
+  "keywords": [
+    "frontend",
+    "react",
+    "socket.io"
+  ],
+  "author": "Marcos Iorio",
+  "license": "ISC",
+  "dependencies": {
+    "react-icons": "^4.3.1"
+  }
+}
