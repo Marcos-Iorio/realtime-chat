@@ -31,7 +31,7 @@ io.on("connection", (socket) => {
 
     // Listen for new messages
     socket.on(MESSAGE_EVENT, (data) => {
-        console.log(data)
+      console.log(data)
       io.emit(MESSAGE_EVENT, data);
     });
   

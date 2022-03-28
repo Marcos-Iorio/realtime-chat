@@ -4,8 +4,7 @@
   "description": "Real time chat app frontend using React",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publishToHeroku": "cd ../ && git subtree push --prefix Client heroku-realtimechat-client master || true"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "frontend",

@@ -1,13 +1,15 @@
 import {useState, useRef, useEffect} from 'react';
 
 import { io } from "socket.io-client";
-const SERVER ="https://realtimechat-serverside.herokuapp.com";
+const SERVER ="https://realtimechat-serverside.herokuapp.com" /* "http://localhost:5000" */;
 
 const MESSAGE_EVENT = "newMessage";
 
 const useChat = () => {
     const [messages, setMessages] = useState([]);
     const socketRef = useRef();
+
+    const date = new Date();
 
     useEffect(() =>{
         socketRef.current = io(SERVER);
@@ -27,10 +29,10 @@ const useChat = () => {
     }, []);
 
     const sendMessage = (messageBody) => {
-        console.log(messageBody)
         socketRef.current.emit(MESSAGE_EVENT, {
             body: messageBody,
             senderId: socketRef.current.id,
+            timeStamp: `${date.getHours()}:${date.getMinutes()}`
         });
     };
 
