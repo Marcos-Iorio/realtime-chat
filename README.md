@@ -5,7 +5,7 @@ The styles of the app are made with **Tailwind** and is responsive on mobile and
 
 # Demo
 
-You can use the app here https://vercel.com/marcos-iorio/realtime-chat.
+You can use the app here https://realtime-chat-marcos-iorio.vercel.app/.
 
 ## Usage
 
