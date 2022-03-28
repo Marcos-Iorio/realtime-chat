@@ -4,7 +4,7 @@ A real time chat webapp with React, Express, Socket.io and Nodemon.
 The styles of the app are made with **Tailwind** and is responsive on mobile and desktop
 
 # Demo
-
+(CTRL + LEFT CLICK to open in a new tab)
 You can use the app here https://realtime-chat-marcos-iorio.vercel.app/.
 
 ## Usage
