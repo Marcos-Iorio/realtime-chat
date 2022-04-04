@@ -1,7 +1,7 @@
 # Real time chat app
 
-A real time chat webapp with React, Express, Socket.io and Nodemon.
-The styles of the app are made with **Tailwind** and is responsive on mobile and desktop
+A real time chat webapp with React, Express, Socket.io and MongoDB.
+The styles of the app are made with **Tailwind** and its responsive on mobile and desktop
 
 # Demo
 (CTRL + LEFT CLICK to open in a new tab)
