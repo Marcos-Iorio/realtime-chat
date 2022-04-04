@@ -26,19 +26,19 @@ To use the app put in the console ```git clone https://github.com/Marcos-Iorio/r
  npm install
  ndoe index.js
  ```
- Then go to http://localhost:4000 to view the server(is not required to open it)
+ Then go to http://localhost:5000 to view the server(is not required to open it)
 
 ## About
-Right now the app is running in Heroku and Vercel, if you want to run it locally, you have to change the SERVER variable in the ChatRoom.jsx to http://localhost:4000. The main approach of this project is to learn Socket.io and practising React, in this case i practice a lot of useRef, and i improve my css skills.
+Right now the app is running in Heroku and Vercel, if you want to run it locally, you have to change the SERVER variable in the ChatRoom.jsx to http://localhost:5000. The main approach of this project is to learn Socket.io and practising React, in this case i practice a lot of useRef, and i improve my css skills.
 
 ## New update
 
 - Press enter to send a message.
 - View when the message was sent.
 - Improved the UI.
+- ⭐ Now the messages are saved in a DataBase.
 
 ## Future updates
 
-- Save all the messages on a DB
 - Add login with Github
 - Improve the users id.
