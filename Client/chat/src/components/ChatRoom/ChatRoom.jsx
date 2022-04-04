@@ -41,7 +41,7 @@ const ChatRoom = () => {
         <div className="h-full bg-zinc-700 overflow-hidden">
             <div className=" hidden md:block md:absolute md:top-1/2 md:left-3">
                 <p className="text-center text-white">Made by Marcos Iorio</p>
-                <p className="text-center text-white">Repository: <a href="https://github.com/Marcos-Iorio/realtime-chat" target="_blank">GITHUB</a></p>
+                <p className="text-center text-white">Repository: <a href="https://github.com/Marcos-Iorio/realtime-chat" target="_blank" rel="noreferrer">GITHUB</a></p>
             </div>
             <div className="h-full grid place-content-center">
                 <div className="bg-white rounded-md h-[40em] w-[20em] md:h-[35em] md:w-[40em] relative shadow-2xl">
